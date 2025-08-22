@@ -47,7 +47,9 @@ export const TodoList: React.FC<Props> = ({
                   </p>
                 )}
 
-                {!todo.completed && <p>{todo.title}</p>}
+                {!todo.completed && (
+                  <p className="has-text-danger">{todo.title}</p>
+                )}
               </td>
               <td className="has-text-right is-vcentered">
                 <button
